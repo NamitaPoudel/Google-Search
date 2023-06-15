@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <!--header: consist of "About, Store, Gmail, Images Grid user"-->
+        <div class="header">
+            <!--style="list-style-type: none;" for header-->
+            <div class="header-left">
+                <a href="https://about.google/" class="list" target="_top">About</a>
+                <a href="https://store.google.com/" class="list" target="_top">Store</a>
+            </div>
+            <div class="header-right">
+                <a href="https://mail.google.com/" class="list" target = "_top">Gmail</a>
+                <a href="image.html" class="list" target = "_top">Images</a>
+                <span class="grid"><ion-icon name="apps-sharp"></ion-icon></span>
+                <button class="list">Sign in</button>
+            </div>
+        </div>
+        <!--Google body page-->
+        <div>
+            <p>Google</p>
+            <form action="https://google.com/search">
+                <ion-icon class="search" name="search-outline"></ion-icon><input type="text" name="q">
+                <br/>
+                <input type="submit" value="Google Search">
+                <input name=btnI type=submit value="I'm Feeling Lucky">
+            </form>
+        </div>
+        <!--Footer-->
+        <div id="footer">
+            <p>Carbon neutral since 2007</p>
+            <div class="footer-left">
+                <a href="https://ads.google.com/" class="foo-list" target="_top">Advertising</a>
+                <a href="https://smallbusiness.withgoogle.com" class="foo-list" target="_top">Business</a>
+                <a href="https://www.google.com/search/howsearchworks/" class="foo-list" target="_top">How Search Works</a>
+            </div>
+            <div class="footer-right">
+                <a href="https://policies.google.com/" class="foo-list" target="_top">Privacy</a>
+                <a href="https://policies.google.com/terms" class="foo-list" target="_top">Terms</a>
+                <div class="bar">
+                    <span class="settings">Settings</span>
+                    <div class="bar-content">
+                        <a href="https://www.google.com/preferences">Search Settings</a>
+                        <a href="advanced.html">Advanced Search</a>
+                        <a href="https://myaccount.google.com/yourdata/search">Your data in Search</a>
+                        <a href="https://myactivity.google.com/product/search">Search history</a>
+                        <a href="https://support.google.com/websearch">Search help</a>
+                        <a href="#">Send feedback</a>
+                        <a href="#">Dark Theme: Off</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

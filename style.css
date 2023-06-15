@@ -1,0 +1,53 @@
+.header{
+    display: flex;
+}
+.list{
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    font-size: 15px;
+    padding: 10px;
+}
+.grid{
+    font-size: 1.25em;
+}
+.search{
+    color: gray;
+    font-size: 1em;
+}
+a:hover,span.hover{
+    text-decoration: underline;
+}
+.bar{
+    display: inline-block;
+    color: gray;
+}
+
+.bar-content{
+    display: none;
+    position: absolute;
+}
+
+.bar-content a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.bar:hover .bar-content{display: block;}
+.bar:hover .settings{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer{
+    display: flex;
+}
+
+.foo-list{
+    text-decoration: none;
+    color: gray;
+    text-align: left;
+    font-size: 15px;
+    padding: 10px;
+}

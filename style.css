@@ -1,5 +1,18 @@
 .header{
     display: flex;
+    margin-top: 10px;
+}
+.header-left{
+    background-color: orange;
+    width: 30%;
+    float: left;
+    text-align: left;
+}
+.header-right{
+    background-color: aqua;
+    width: 70%;
+    float: right;
+    text-align: right;
 }
 .list{
     text-decoration: none;
@@ -8,9 +21,29 @@
     font-size: 15px;
     padding: 10px;
 }
-.grid{
+#grid{
     font-size: 1.25em;
+    margin: 7px;
 }
+
+.sign-in{
+    text-decoration: none;
+    background-color: rgb(12, 130, 248);
+    color: white;
+    font-size: 15px;
+    padding-right: 23px;
+    padding-left: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.sign-in:hover{
+    background-color: rgba(5, 84, 243, 0.915);
+}
+
 .search{
     color: gray;
     font-size: 1em;
@@ -36,7 +69,7 @@ a:hover,span.hover{
 
 .bar:hover .bar-content{display: block;}
 .bar:hover .settings{
-    cursor: pointer;
+    
     text-decoration: underline;
 }
 

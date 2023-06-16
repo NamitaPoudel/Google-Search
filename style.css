@@ -1,33 +1,44 @@
-.header{
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header{
+    margin-left: 18px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
     margin-top: 10px;
 }
-.header-left{
-    background-color: orange;
-    width: 30%;
-    float: left;
-    text-align: left;
-}
-.header-right{
-    background-color: aqua;
-    width: 70%;
-    float: right;
-    text-align: right;
-}
-.list{
+
+.nav-left, .nav-right{
     text-decoration: none;
-    color: black;
-    text-align: left;
-    font-size: 15px;
-    padding: 10px;
-}
-#grid{
-    font-size: 1.25em;
-    margin: 7px;
 }
 
-.sign-in{
-    text-decoration: none;
+.nav-left a, .nav-right a{
+    color: black;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.nav-left a:hover, .nav-right a:hover{
+    text-decoration: underline;
+}
+
+.nav-right ion-icon{
+    font-size: 1.25em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-right button{
     background-color: rgb(12, 130, 248);
     color: white;
     font-size: 15px;
@@ -40,47 +51,80 @@
     border-radius: 5px;
 }
 
-.sign-in:hover{
+.nav-right button:hover{
     background-color: rgba(5, 84, 243, 0.915);
 }
-
-.search{
-    color: gray;
-    font-size: 1em;
-}
-a:hover,span.hover{
-    text-decoration: underline;
-}
-.bar{
-    display: inline-block;
-    color: gray;
+.container{
+    margin: 100px;
 }
 
-.bar-content{
-    display: none;
+.container img{
+    display: block;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 96px;
+    margin-bottom: 25px;
+}
+
+.container ion-icon{
     position: absolute;
+    margin: 14px;
+    color: rgb(132, 128, 128);
 }
 
-.bar-content a{
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
+.container input[type=text]{
+    margin: auto;
+    display: block;
+    border: 1px solid #ddd;
+    width: 550px;
+    height: 48px;
+    border-radius: 30px;
 }
 
-.bar:hover .bar-content{display: block;}
-.bar:hover .settings{
-    
+.btns{
+    display: flex;
+    justify-content: center;
+}
+
+.container input[type=submit]{
+    margin: 7px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(230, 227, 227, 0.22);
+    color: rgb(101, 100, 100);
+    font-size: 14px;
+}
+
+.container input[type=submit]:hover{
+    cursor: pointer;
+    border: 1px solid lightgray
+}
+
+footer{
+    background-color: #f2f2f2;
+    margin-top: auto;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+footer a{
+    color: grey;
+    padding-bottom: 20px;
+}
+
+footer a:hover{
     text-decoration: underline;
 }
 
-.footer{
+.footer-inside{
+    align-items: center;
     display: flex;
+    justify-content: space-around;
+    margin-top: 28px;
 }
 
-.foo-list{
-    text-decoration: none;
-    color: gray;
-    text-align: left;
-    font-size: 15px;
-    padding: 10px;
+.footer-inside a{
+    color: grey;
 }

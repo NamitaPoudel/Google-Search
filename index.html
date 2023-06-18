@@ -23,11 +23,15 @@
         
         <!--Google body page-->
         <div class="container">
-            <img src="images/googlelogo.png" alt="Google-Logo">
+            <img src="images/googlelogo.png" alt="Google-Logo" id="logo">
             <form action="https://google.com/search">
-                <div class="search"> <!--Maybe we dont need this div, new addition-->
+                <div class="search-container"> <!--Maybe we dont need this div, new addition-->
                     <ion-icon class="search" name="search-outline"></ion-icon>
-                    <input type="text" name="q">
+                    <input type="text" name="q" placeholder=" ">
+                    <button class="close-icon" type="reset"></button>
+                    <span class="line">&#124;</span>
+                    <img src="images/googlemic.png" alt="Search by voice" id="mic">
+                    <img src="images/googleimage.png" alt="Search by image" id="image">
                 </div>
                 <div class="btns">
                     <input type="submit" value="Google Search">
@@ -37,12 +41,15 @@
         </div>
         <!--Footer-->
         <footer>
-            <a href="https://sustainability.google/carbon-free/">Carbon neutral since 2007</a>
             <nav class="footer-inside">
                 <div class="nav-left">
                     <a href="https://ads.google.com/" class="foo-list" target="_top">Advertising</a>
                     <a href="https://smallbusiness.withgoogle.com" class="foo-list" target="_top">Business</a>
                     <a href="https://www.google.com/search/howsearchworks/" class="foo-list" target="_top">How Search Works</a>
+                </div>
+                <div class="footer-middle">
+                    <img src="images/googleleaf.png" alt="google-leaf">
+                    <a href="https://sustainability.google/carbon-free/">Carbon neutral since 2007</a>
                 </div>
                 <div class="nav-right">
                     <a href="https://policies.google.com/" class="foo-list" target="_top">Privacy</a>

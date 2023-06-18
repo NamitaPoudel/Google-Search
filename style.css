@@ -55,7 +55,7 @@ body{
     background-color: rgba(5, 84, 243, 0.915);
 }
 
-.container img{
+.container #logo{
     display: block;
     max-width: 270px;
     margin-left: auto;
@@ -64,29 +64,102 @@ body{
     margin-bottom: 25px;
 }
 
-.container ion-icon{
-    position: absolute;
-    margin: 14px;
-    color: rgb(132, 128, 128);
-}
-
-.container .search{
-    align-items: center;
-}
-
-.container input[type=text]{
+.container .search-container{
     position: relative;
     margin: auto;
     align-items: center;
-    display: block;
+    display: flex;
+    padding-left: 15px;
     border: 1px solid #ddd;
     width: 570px;
-    height: 48px;
+    height: 50px;
     border-radius: 30px;
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
+.container .search-container:hover{
+    border: 2px solid rgb(217, 217, 217)
+}
 
+.container ion-icon{
+    padding-right: 15px;
+}
+
+.container input[type=text]{
+    height: 40px;
+    width: 395px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+.container input[type=text]::placeholder{
+    padding: 20px;
+}
+
+.close-icon{
+	border:1px solid transparent;
+	background-color: transparent;
+	display: inline-block;
+	vertical-align: middle;
+    outline: 0;
+    cursor: pointer;
+}
+.close-icon:after {
+	content: "X";
+	position: relative;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 2px;
+    padding-top: 11px;
+    padding-right: 11px;
+	text-align: center;
+	color: rgb(149, 144, 144);
+    width: 3px;
+	font-weight: normal;
+	font-size: 20px;
+    transform: scale(2, 1);
+	cursor: pointer;
+}
+
+.container input[type=text]:invalid ~ .close-icon{
+	display: none;
+}
+
+.container input[type=text]:placeholder-shown + .close-icon{
+    opacity: 0;
+    pointer-events: none;
+}
+
+/*Tried to make the verticle line like the close icon which disappears when not typing but couldn't do it. Will try later.*/
+.container .line{
+    color: #ddd;
+    font-size: 30px;
+    padding-bottom: 4px;
+    transform: scale(.5,1);
+    position: relative;
+}
+
+.container input[type=text]:focus-within .line{
+    display: none;
+}
+
+/*Verticle line code done!!*/
+
+.container #mic{
+    width: 32px;
+    margin-right: 8px;
+    margin-left: 11px;
+    cursor: pointer;
+}
+
+.container #image{
+    width: 25px;
+    cursor: pointer;
+}
 
 .btns{
     display: flex;
@@ -113,24 +186,34 @@ footer{
     margin-top: auto;
     text-align: center;
     padding: 15px;
-    font-size: 14px;
-}
-footer a{
-    color: grey;
-    padding-bottom: 20px;
-}
-
-footer a:hover{
-    text-decoration: underline;
+    font-size: 15px;
+    box-sizing: border-box;
 }
 
 .footer-inside{
     align-items: center;
     display: flex;
-    justify-content: space-around;
-    margin-top: 28px;
+    justify-content: space-between;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-inside .footer-middle{
+    display: flex;
+}
+.footer-inside .footer-middle img{
+    width: 3px;
+    rotate: 110deg;
+    transform: scale(4, 1);
+    filter: brightness(80%);
 }
 
 .footer-inside a{
     color: grey;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.footer-inside a:hover{
+    text-decoration: underline;
 }

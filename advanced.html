@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <!--header: consist of "About, Store, Gmail, Images Grid user"-->
+        <nav class="header">
+            <div class="nav-left">
+                <a href="index.html"><img class="nav-logo" src="images/googlelogo.png" alt="google-logo"></a>
+            </div>
+            <div class="nav-right">
+                <a href="index.html">Google Search</a>
+                <ion-icon name="apps-sharp"></ion-icon>
+                <a href="https://accounts.google.com/"><button>Sign in</button></a>
+            </div>   
+        </nav>
+        
+        <!--Advanced Search body page-->
+        <div class="container">
+            <p class="title">Advanced Search</p>
+            <hr>
+            <div class="advanced-body">
+                <p class="first">Find pages with...</p>
+                <br>
+                <form action="https://google.com/search">
+                    <label for="text1">all these words:</label>
+                    <input type="text" name="as_q" >
+                    <br><br>
+                    <label for="text2">this exact word/phrase:</label>
+                    <input type="text" name="as_epq" >
+                    <br><br>
+                    <label for="text3">any of these words:</label>
+                    <input type="text" name="as_oq" >
+                    <br><br>
+                    <label for="text4">none of these words:</label>
+                    <input type="text" name="as_eq" >
+                    <br><br>
+                    <label for="text5"> </label>
+                    <input class="submit" type="submit" value="Advanced Search">
+                </form>
+            </div>
+        </div>
+        <!--Footer-->
+        <footer>
+            <nav class="footer-inside">
+                <div class="nav-left">
+                    <a href="https://support.google.com/websearch/">Help</a>
+                    <a href="https://policies.google.com/" class="foo-list" target="_top">Privacy</a>
+                    <a href="https://policies.google.com/terms" class="foo-list" target="_top">Terms</a>
+                </div>
+                <div class="nav-right">
+                    
+                </div>
+            </nav>
+        </footer>
+    </body>
+</html>

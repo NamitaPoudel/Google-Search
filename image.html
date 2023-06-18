@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <!--header: consist of "About, Store, Gmail, Images Grid user"-->
+        <nav class="header">
+            <div class="nav-left">
+                
+            </div>
+            <div class="nav-right">
+                <a href="index.html">Google Search</a>
+                <ion-icon name="apps-sharp"></ion-icon>
+                <a href="https://accounts.google.com/"><button>Sign in</button></a>
+            </div>   
+        </nav>
+        
+        <!--Google body page-->
+        <div class="container">
+            <img src="images/googleimagelogo.png" alt="Google-Logo" id="logo">
+            <form method="get" action="http://images.google.com/images">
+                <div class="search-container"> <!--Maybe we dont need this div, new addition-->
+                    <ion-icon class="search" name="search-outline"></ion-icon>
+                    <input type="text" name="q" placeholder=" ">
+                    <button class="close-icon" type="reset"></button>
+                    <span class="line">&#124;</span>
+                    <img src="images/googlemic.png" alt="Search by voice" id="mic">
+                    <img src="images/googleimage.png" alt="Search by image" id="image">
+                    <button class="btn-search" type= "submit"><ion-icon class="search" name="search-outline"></ion-icon></button>
+                </div>
+            </form>
+        </div>
+        <!--Footer-->
+        <footer>
+            <nav class="footer-inside">
+                <div class="nav-left">
+                    <a href="https://about.google/">About</a>
+                    <a href="https://ads.google.com/" class="foo-list" target="_top">Advertising</a>
+                    <a href="https://smallbusiness.withgoogle.com" class="foo-list" target="_top">Business</a>
+                    <a href="https://www.google.com/search/howsearchworks/" class="foo-list" target="_top">How Search Works</a>
+                </div>
+                <div class="nav-right">
+                    <a href="https://policies.google.com/" class="foo-list" target="_top">Privacy</a>
+                    <a href="https://policies.google.com/terms" class="foo-list" target="_top">Terms</a>
+                    <a href="#">Settings</a>
+                </div>
+            </nav>
+        </footer>
+    </body>
+</html>
